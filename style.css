@@ -1,0 +1,227 @@
+/* Variáveis para fácil personalização */
+:root {
+    --bg-color: #121212; /* Fundo escuro */
+    --text-color: #E0E0E0; /* Texto claro */
+    --accent-color: #00FFC0; /* Cor neon/ciano */
+    --secondary-accent: #FF3366; /* Cor de destaque (ex: links) */
+    --font-family: 'Roboto Mono', monospace; /* Fonte de terminal */
+    --padding-unit: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.terminal-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 20px rgba(0, 255, 192, 0.4); /* Efeito neon */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: var(--padding-unit);
+}
+
+/* 1. CABEÇALHO */
+.terminal-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed var(--accent-color);
+    padding-bottom: 1rem;
+}
+
+.prompt {
+    color: var(--secondary-accent);
+    margin-right: 10px;
+}
+
+.command-line {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.slogan {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 400;
+}
+
+.contact-info {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+/* TÍTULOS DE SEÇÃO */
+.section-title {
+    color: var(--secondary-accent);
+    font-size: 1.5rem;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 10px;
+    margin: 3rem 0 1.5rem;
+    text-transform: uppercase;
+}
+
+.section-block {
+    padding-bottom: 1.5rem;
+}
+
+/* 2. HARD SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--padding-unit);
+}
+
+.skill-item {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #333;
+    border: 1px solid var(--accent-color);
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--accent-color);
+    width: 0; /* JS irá definir a largura */
+    transition: width 1s ease-out;
+    box-shadow: 0 0 8px var(--accent-color);
+}
+
+/* 3. SOFT SKILLS */
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.soft-tag {
+    background-color: var(--secondary-accent);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    cursor: default;
+    transition: transform 0.2s;
+    border-radius: 2px;
+}
+
+.soft-tag:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* 4. LOGS E ARTIGOS */
+.log-entry {
+    margin-bottom: 1.5rem;
+    padding: 10px;
+    border-left: 3px solid var(--secondary-accent);
+}
+
+.log-entry h3 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.status-ok {
+    color: var(--accent-color);
+}
+
+/* LINKS DENTRO DE LOGS */
+.log-entry a, .project-card a {
+    color: var(--secondary-accent);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.log-entry a:hover, .project-card a:hover {
+    opacity: 0.7;
+}
+
+/* 5. PROJETOS */
+.project-card {
+    border: 1px dashed var(--secondary-accent);
+    padding: var(--padding-unit);
+    margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+    display: inline-block;
+    background-color: #333;
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 1px solid var(--accent-color);
+}
+
+/* 7. RODAPÉ */
+.terminal-footer {
+    border-top: 1px dashed var(--accent-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ANIMAÇÕES */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+    color: var(--accent-color);
+}
+
+
+.skill-item.google-tool .skill-name {
+    color: var(--secondary-accent); /* Usa a cor de destaque para GA/GTM */
+}
+
+/* Atualize a regra .progress para usar uma cor genérica. 
+  
+*/
+.progress {
+    height: 100%;
+    background-color: var(--accent-color); 
+    width: 0; 
+    transition: width 1s ease-out;
+    box-shadow: 0 0 8px var(--accent-color);
+}
