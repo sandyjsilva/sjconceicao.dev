@@ -10,7 +10,7 @@ Este repositório contém o código-fonte do meu Portfólio Profissional, projet
 
 ### 🔗 Acesse a Aplicação
 
-[![Visualizar Portfólio](https://img.shields.io/badge/Acessar%20Online-Deploy%20aqui-555555?style=for-the-badge&logo=verc)]([https://sandyjsilva.github.io/sjconceicao.dev/]) 
+[![Visualizar Portfólio](https://sandyjsilva.github.io/sjconceicao.dev/)]([https://sandyjsilva.github.io/sjconceicao.dev/]) 
 ---
 
 ## ⚙️ Tecnologias Utilizadas e Foco em Engenharia
