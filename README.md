@@ -10,7 +10,7 @@ Este repositório contém o código-fonte do meu Portfólio Profissional, projet
 
 ### 🔗 Acesse a Aplicação
 
-[![Visualizar Portfólio](https://img.shields.io/badge/Acessar%20Online-Deploy%20aqui-555555?style=for-the-badge&logo=vercel)]([INSIRA O LINK DO SEU DEPLOY AQUI]) 
+[![Visualizar Portfólio](https://img.shields.io/badge/Acessar%20Online-Deploy%20aqui-555555?style=for-the-badge&logo=verc)]([https://sandyjsilva.github.io/sjconceicao.dev/]) 
 ---
 
 ## ⚙️ Tecnologias Utilizadas e Foco em Engenharia
@@ -32,7 +32,3 @@ Este projeto utiliza uma *stack* puramente baseada nos fundamentos do Front-End,
 * **Responsividade:** O layout é adaptável a diferentes tamanhos de tela.
 * **Performance:** Código JavaScript minimalista, priorizando a velocidade de carregamento (First Contentful Paint).
 * **Organização de Arquivos:** Separação clara entre HTML (estrutura), CSS (estilo) e JS (lógica).
-
----
-
-## 📂 Estrutura de Arquivos
